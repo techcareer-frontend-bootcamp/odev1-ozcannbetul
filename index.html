@@ -1,38 +1,76 @@
-
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-   <meta charset="utf-8" /> 
-   <meta name=”viewport” content=”width=device-width, initial-scale=1.0”> 
-   <title>HTML5 EĞİTİMLERİ</title>
-
-   <style type="text/css">
-     body {
-       max-width: 1200px;
-       margin: auto;
-     }
-     header, nav, section, article, footer {
-      border: 1px solid grey;
-      margin: 25px;
-      padding: 10px;
-     }
-
-     nav ul li,
-     nav ol li { 
-       display: inline; 
-      }
-   </style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Bootcamp-Ödev1</title>
+    <style type="text/css">
+        body {
+          max-width: 1200px;
+          margin: auto;
+        }
+        header, nav, section, article, footer {
+         border: 1px solid grey;
+         margin: 25px;
+         padding: 10px;
+        }
+   
+        nav ul li,
+        nav ol li { 
+          display: inline; 
+         }
+      </style>
 </head>
-
 <body>
+    <header>
+       <H1>HTML İSKELET YAPISI</H1> 
+    </header>
+  
+    <NAV>
+        <ul>
+            <li><a href="anasayfa">Anasayfa</a></li>
+            <li><a href="hakkimizda">Hakkımızda</a></li>
+            <li><a href="kalite">Kalite</a></li>
+             <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+    </NAV>
 
-  <!-- Header  -->  
-  <!-- Menu  --> 
- 
-  <!-- Content  --> 
+<main>
 
-  <!-- Footer  -->  
+   <section>
+       <h2>Ünlü Ülkeler</h2>
+        <article>
+           <h3>Türkiye</h3>
+           <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b> <i> Laudantium doloremque quia labore modi distinctio eaque! </i><u>Dignissimos, est. Eius hic labore et culpa, quod molestiae minus. Atque architecto pariatur eius totam?</u>
+            </p>
+       </article>
+       <article>
+           <h3>İrlanda</h3>
+           <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</b> <i> Laudantium doloremque quia labore modi distinctio eaque! </i><u>Dignissimos, est. Eius hic labore et culpa, quod molestiae minus. Atque architecto pariatur eius totam?</u>
+           </p> 
+       </article>
+   </section>
 
+   <section>
+    <h2 id="iletisim">İletişim</h2>
+    <form action="index.html">
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" placeholder="Zorunlu Alan">
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" placeholder="Zorunlu Alan">
+        <label for="konu">Konu:</label>
+        <input type="text" id="konu" placeholder="Zorunlu Alan">
+        <label for="konu2">Konu:</label>
+        <input type="checkbox" id="konu2">
+        <button type="reset" id="reset">Temizle</button>
+        <button type="submit" id="submit">Gönder</button>
+    </form>
+   </section>
+
+</main>
+  <footer>
+     <div>&copy; 2022 Tüm hakları saklıdır.</div> 
+    </footer>
 </body>
 </html>
